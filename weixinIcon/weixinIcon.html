@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .iconContainer{
+            width: 300px;
+            height: 300px;
+            border-radius:8px;
+            background-color: #08c406;
+            position: relative;
+        }
+
+        .iconContainer:before{
+            content: '';
+            position: absolute;;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background-color: #08c406;
+            top:150px;
+            left: 155px;
+            z-index: 2;
+            box-shadow: 70px 0 #08c406,-70px -50px 0 2px #08c406,0 -50px 0 2px #08c406;
+        }
+
+        .iconContainer:after{
+            content: '';
+            border-width: 30px 12px;
+            border-style: solid;
+            border-color: #fff transparent transparent transparent;
+            position: absolute;
+            top:180px;
+            left:50px;
+            transform: rotate(45deg);
+        }
+
+        .content{
+            content: '';
+            width: 180px;
+            height: 150px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top:60px;
+            left:35px;
+        }
+
+        .content:before{
+            content: '';
+            width: 140px;
+            height: 120px;
+            background-color: #ffffff;
+            border-radius: 50%;
+            position: absolute;
+            top:60px;
+            left:90px;
+            border: 2px solid #08c406;
+        }
+        .content:after{
+            content: '';
+            border-width: 30px 10px;
+            border-style: solid;
+            border-color: #fff transparent transparent transparent;
+            position: absolute;
+            top:160px;
+            left:195px;
+            transform: rotate(-45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="iconContainer">
+        <div class="content"></div>
+    </div>
+</body>
+</html>
